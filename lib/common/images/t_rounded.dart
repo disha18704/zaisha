@@ -7,11 +7,17 @@ import 'package:t_store1/utils/constants/sizes.dart';
 
 class Troundedimage extends StatelessWidget {
   const Troundedimage({
-    super.key, this.width = 150, this.height = 158, required this.imageUrl, 
-    this.applyImageRadius = false, this.border, 
+    super.key, 
+    this.width = 400,
+    this.height = 170, 
+    required this.imageUrl, 
+    this.applyImageRadius = true, 
+    this.border, 
     this.backgroundColor = TColors.light,
-    this.fit = BoxFit.contain, this.padding, 
-    this.isNetworkingImage = false, this.onPressed,
+    this.fit = BoxFit.contain,
+    this.padding, 
+    this.isNetworkingImage = false, 
+    this.onPressed,
   });
 
   final double? width, height;
@@ -26,18 +32,24 @@ class Troundedimage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        border: border, color: backgroundColor,
-        borderRadius: BorderRadius.circular(TSizes.md),
-      ),
-      child: ClipRRect(
-        borderRadius: applyImageRadius ? BorderRadius.circular(TSizes.md) : BorderRadius.zero,
-        child: Image(
-
-        fit: fit,
-        image: isNetworkingImage ? NetworkImage(imageUrl) : AssetImage(imageUrl) as ImageProvider,
-          
+    return GestureDetector(
+      onTap: onPressed,
+      child: Container(
+        width: width,
+        height: height,
+        padding: padding,
+        decoration: BoxDecoration(
+          border: border, color: backgroundColor,
+          borderRadius: BorderRadius.circular(TSizes.md),
+        ),
+        child: ClipRRect(
+          borderRadius: applyImageRadius ? BorderRadius.circular(TSizes.md) : BorderRadius.zero,
+          child: Image(
+      
+          fit: fit,
+          image: isNetworkingImage ? NetworkImage(imageUrl) : AssetImage(imageUrl) as ImageProvider,
+            
+          ),
         ),
       ),
     );
