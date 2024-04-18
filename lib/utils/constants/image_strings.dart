@@ -27,6 +27,10 @@ class TImages {
   static const String braceletIcon = "assets/icons/icons8-bracelet-50.png";
   static const String earringsIcon = "assets/icons/icons8-earrings-50.png";
   static const String pendantIcon = "assets/icons/icons8-pendant-50.png";
-  static const String handwithbraceletIcon = "assets/icons/icons8-hand-with-bracelet-50.png";
+  static const String handwithbraceletIcon =
+      "assets/icons/icons8-hand-with-bracelet-50.png";
 
+  static const String banner1 = "assets/images/Banner_1.png";
+  static const String banner2 = "assets/images/Banner_2.png";
+  static const String banner3 = "assets/images/Banner_3.png";
 }

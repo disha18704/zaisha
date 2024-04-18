@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:t_store1/utils/constants/colors.dart';
 
-
 class TCircularContainer extends StatelessWidget {
   const TCircularContainer({
     Key? key,
@@ -9,7 +8,8 @@ class TCircularContainer extends StatelessWidget {
     this.width = 400,
     this.height = 400,
     this.radius = 0,
-    this.padding = 0, // Added initializer for padding
+    this.margin ,
+    this.padding = 0, 
     this.backgroundColor = TColors.white,
   }) : super(key: key);
 
@@ -19,6 +19,7 @@ class TCircularContainer extends StatelessWidget {
   final double padding;
   final Widget? child;
   final Color backgroundColor;
+  final EdgeInsets? margin;
 
   @override
   Widget build(BuildContext context) {

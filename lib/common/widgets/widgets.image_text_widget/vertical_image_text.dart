@@ -28,8 +28,8 @@ class TVeriticalImageText extends StatelessWidget {
           children: [
             // Circular Icon
             Container(
-              width: 64,
-              height: 64,
+              width: 55,
+              height: 55,
               padding: const EdgeInsets.all(TSizes.sm),
               decoration: BoxDecoration(
                 color: TColors.white,
