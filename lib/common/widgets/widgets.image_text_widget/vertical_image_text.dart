@@ -5,13 +5,13 @@ import 'package:t_store1/utils/constants/sizes.dart';
 
 class TVeriticalImageText extends StatelessWidget {
   const TVeriticalImageText({
-    super.key,
+    Key? key,
     required this.image,
     required this.title,
     this.textColor = TColors.white,
     this.backgroundColor = TColors.white,
     this.onTap,
-  });
+  }) : super(key: key);
 
   final String image, title;
   final Color textColor;
@@ -28,16 +28,16 @@ class TVeriticalImageText extends StatelessWidget {
           children: [
             // Circular Icon
             Container(
-              width: 55,
-              height: 55,
+              width: 50,
+              height: 50,
               padding: const EdgeInsets.all(TSizes.sm),
               decoration: BoxDecoration(
                 color: TColors.white,
                 borderRadius: BorderRadius.circular(100),
               ),
-              child: const Center(
-                child: Image(
-                  image: AssetImage(TImages.necklaceIcon),
+              child: Center(
+                child: Image.asset(
+                  image,
                   fit: BoxFit.cover,
                   color: TColors.dark,
                 ),
@@ -49,7 +49,7 @@ class TVeriticalImageText extends StatelessWidget {
             SizedBox(
               width: 55,
               child: Text(
-                'necklace',
+                title,
                 style: Theme.of(context)
                     .textTheme
                     .labelMedium!

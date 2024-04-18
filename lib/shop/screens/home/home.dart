@@ -33,19 +33,19 @@ class Product {
     ),
     Product(
       name: 'Necklace',
-      brand: 'La Mia',
+      brand: 'Zaisha',
       price: '50.0',
       imagePath: TImages.product2,
     ),
     Product(
       name: 'Silver Earrings',
-      brand: 'Shimmer',
+      brand: 'Zaisha',
       price: '25.0',
       imagePath: TImages.product1,
     ),
     Product(
       name: 'Platinum Ring',
-      brand: 'Elegance',
+      brand: 'Zaisha',
       price: '45.0',
       imagePath: TImages.product3,
     ),

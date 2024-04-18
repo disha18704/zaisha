@@ -53,4 +53,6 @@ class TColors {
   static const Color white = Color(0xFFFFFFFFF);
 
   static const Color borderPrimary = Color(0xFFc9baa1);
+
+  static const Color textcolor = Color(0xFFa3876f);
 }

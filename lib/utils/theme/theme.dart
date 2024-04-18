@@ -18,7 +18,8 @@ class TAppTheme {
 
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
-    fontFamily: 'Poppins-Black',
+    // fontFamily: 'Poppins-Black',
+    fontFamily: 'PlayfairDisplay',
     brightness: Brightness.light,
     primaryColor: Colors.blue,
     scaffoldBackgroundColor: Colors.white,
